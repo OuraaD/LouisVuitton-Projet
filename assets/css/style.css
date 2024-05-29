@@ -1,219 +1,202 @@
 @font-face {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    src: url(../font/futura.ttf);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  src: url(../font/futura.ttf);
 }
-
+nav {
+  width: 100%;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 .profil {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .panier {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
-
 
 .bg-body-tertiary {
-    position: fixed;
-    background: rgba(255, 255, 255, 0.363);
-    width: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.363);
+  width: 100%;
 }
 
-
 h1 {
-    text-transform: uppercase;
-    font-size: 30px;
-    text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 .nav-link {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
-
-
-
 
 header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    min-height: 10vh;
-    background: url(../img/Women_Nautical_WW_HP_Push_V0329_DI3\ \(1\).webp) center top;
-    background-size: cover;
-    background-size: cover;
-    width: 100%;
-    min-height: 90vh;
-    padding-top: 25px;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 10vh;
+  background: url(../img/Women_Nautical.webp) center top;
+  background-size: cover;
+  width: 100%;
+  min-height: 90vh;
+  padding-top: 25px;
 }
 
-
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 #menu {
-    position: fixed;
-    width: 40%;
-    height: 100vh;
-    background: white;
-    color: black;
-    list-style: none;
+  position: fixed;
+  width: 40%;
+  height: 100vh;
+  background: white;
+  color: black;
+  list-style: none;
 }
 
 #menu:not(:target) {
-    left: -200%;
-    transition: left 1s;
+  left: -200%;
+  transition: left 1s;
 }
 
 #menu:target {
-    left: 0;
-    transition: left .5s;
+  left: 0;
+  transition: left 0.5s;
 }
 
 header h1 {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 li a {
-    color: black;
+  color: black;
 }
 
 input {
-    margin-left: 10px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 12px;
-    ;
+  margin-left: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
 }
 
 .loupe {
-    width: 14px;
-    height: 14px;
-    margin-left: 50px;
+  width: 14px;
+  height: 14px;
+  margin-left: 50px;
 }
 
-
-
 .navb {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-
+  width: 20px;
+  height: 20px;
 }
 
 main {
-    padding-top: 50px;
-
+  padding-top: 50px;
 }
 
-.bas{
-    padding-top: 150px;
+.bas {
+  padding-top: 150px;
 }
 .discover {
-    color: black;
-    position: absolute;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid white;
-    background: rgba(128, 128, 128, 0.685);
-    border-radius: 30px;
-    color: white;
-    top: 760px;
-    left: 40%;
-    width: 250px;
-    display: flex;
-   ;
-    justify-content: center;
-    font-size: 13px;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  background: rgba(128, 128, 128, 0.685);
+  border-radius: 30px;
+  color: white;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
 }
 
-
+.action {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .naut {
-    position: absolute;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    top: 690px;
-    left: 40%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  top: 690px;
+  left: 40%;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 }
 
-.wowo{
-    position: absolute;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 10px;
-    top: 666px;
-    left: 39%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
+.wowo {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
 }
 
-.homme{
-    position: absolute;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    top: 1700px;
-    left: 40%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 13px;
+.homme {
+  color: white;
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+.row {
+  position: relative;
+}
+.femme-collection {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.printemps {
+  color: white;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 }
 
-.printemps{
-    position: absolute;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    top: 1730px;
-    left: 40%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 25px;  
+.collection {
+  color: white;
+  border: 1px solid white;
+  background: rgba(128, 128, 128, 0.685);
+  border-radius: 30px;
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
 }
 
-.collection{
- position: absolute;
-    color: white;
-    border: 1px solid white;
-    background: rgba(128, 128, 128, 0.685);
-    border-radius: 30px;
-    padding: 10px;
-    margin: 10px;
-    top: 1800px;
-    left: 40%;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-}
-
-
-
-
-.alert{
-border: 2px solid black;
-padding: 50px;
+.alert {
+  border: 2px solid black;
+  padding: 50px;
 }
